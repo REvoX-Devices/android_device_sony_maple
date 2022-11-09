@@ -4,30 +4,30 @@ Device configuration for Sony Xperia XZ Premium (maple)
 Description
 -----------
 
-This repository is for LineageOS 20.0 on Sony Xperia XZ Premium (maple).
+This repository is for EvolutionX (tiramisu) on Sony Xperia XZ Premium (maple).
 
-How to build LineageOS
+How to build EvolutionX
 ----------------------
 
 * Make a workspace:
 
-        mkdir -p ~/lineageos
-        cd ~/lineageos
+        mkdir -p ~/evo
+        cd ~/evo
 
 * Initialize the repo:
 
-        repo init -u git://github.com/LineageOS/android.git -b lineage-20.0
+        repo init -u https://github.com/Evolution-X/manifest -b tiramisu
 
 * Create a local manifest:
 
-        vim .repo/local_manifests/roomservice.xml
+        vim .repo/local_manifests/evolution.xml
 
         <?xml version="1.0" encoding="UTF-8"?>
         <manifest>
             <!-- SONY -->
             <project name="whatawurst/android_kernel_sony_msm8998" path="kernel/sony/msm8998" remote="github" revision="lineage-20" />
             <project name="whatawurst/android_device_sony_yoshino-common" path="device/sony/yoshino-common" remote="github" revision="lineage-20" />
-            <project name="whatawurst/android_device_sony_maple" path="device/sony/maple" remote="github" revision="lineage-20" />
+            <project name="SimplyRin/android_device_sony_maple" path="device/sony/maple" remote="github" revision="lineage-20" />
 
             <!-- blobs for maple -->
             <project name="whatawurst/android_vendor_sony_yoshino-common" path="vendor/sony/yoshino-common" remote="github" revision="lineage-20" />
@@ -41,8 +41,8 @@ How to build LineageOS
 * Setup the environment
 
         source build/envsetup.sh
-        lunch lineage_maple-userdebug
+        lunch evolution_maple-userdebug
 
 * Build LineageOS
 
-        make -j8 bacon
+        mka evolution
