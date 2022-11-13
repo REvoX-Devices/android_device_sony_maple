@@ -43,6 +43,6 @@ How to build EvolutionX
         source build/envsetup.sh
         lunch evolution_maple-userdebug
 
-* Build LineageOS
+* Build EvolutionX
 
         mka evolution
