@@ -2,10 +2,10 @@
 bluetooth.device.default_name=Xperia XZ Premium
 
 # MiscTA
-ro.semc.product.model=G8142
+# G8188 47.2.E.3.29 (1311-9136 R4C)
+ro.semc.product.model=G8188
 ro.semc.version.fs=GENERIC
-ro.semc.version.fs_revision=47.2.A.10.107
-ro.semc.version.sw=1306-8499
-ro.semc.version.sw_revision=47.2.A.10.107
+ro.semc.version.fs_revision=47.2.E.3.29
+ro.semc.version.sw=1311-9136
+ro.semc.version.sw_revision=47.2.E.3.29
 ro.semc.version.sw_type=user
-ro.semc.version.sw_variant=GLOBAL-LTE4A

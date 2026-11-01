@@ -25,10 +25,11 @@ PRODUCT_NAME := lineage_maple
 PRODUCT_DEVICE := maple
 PRODUCT_MANUFACTURER := Sony
 PRODUCT_BRAND := Sony
-PRODUCT_MODEL := G8142
+PRODUCT_MODEL := G8188
 
 PRODUCT_GMS_CLIENTID_BASE := android-sony
 
+# G8188's own fingerprint (maple_momo, dev-keys) is not Play certified, so use G8142's
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="G8142-user 9 47.2.A.10.107 172320177 release-keys" \
     BuildFingerprint=Sony/G8142/G8142:9/47.2.A.10.107/172320177:user/release-keys
