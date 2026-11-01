@@ -42,3 +42,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Inherit vendor makefiles
 $(call inherit-product, vendor/sony/maple/maple-vendor.mk)
+
+# Regulatory labels (private repo, optional)
+ELABEL_MODEL := SO04J
+$(call inherit-product-if-exists, vendor/sony/elabel/elabel.mk)
