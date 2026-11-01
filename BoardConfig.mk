@@ -11,10 +11,7 @@ PRODUCT_FULL_TREBLE_OVERRIDE := true
 # Partitions
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 7707033600
 BOARD_VENDORIMAGE_PARTITION_SIZE := 419430400
-BOARD_VENDORIMAGE_EXTFS_INODE_COUNT := 4096
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := squashfs
-BOARD_VENDORIMAGE_JOURNAL_SIZE := 0
-BOARD_VENDORIMAGE_SQUASHFS_COMPRESSOR := lz4
 
 # Inherit common board configs
 include device/sony/yoshino-common/BoardConfigCommon.mk
@@ -23,7 +20,9 @@ include device/sony/yoshino-common/BoardConfigCommon.mk
 TARGET_SCREEN_DENSITY := 430
 
 # Kernel
+ifneq ($(MAPLE_KERNEL),4.14)
 TARGET_KERNEL_CONFIG += sony/maple.config
+endif
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop

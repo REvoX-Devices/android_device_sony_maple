@@ -10,6 +10,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Indicate the first API level the device has been commercially launched on
 PRODUCT_SHIPPING_API_LEVEL := 25
 
+# ART: 4.14 lacks MREMAP_DONTUNMAP / UFFD minor faults, so the runtime falls back to the CC GC.
+# Preopt for it too, otherwise every odex is rejected with "Read barrier state mismatch".
+# Set here because default_art_config.mk (inherited above) wins over values from inherited makefiles.
+PRODUCT_ENABLE_UFFD_GC := false
+
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
