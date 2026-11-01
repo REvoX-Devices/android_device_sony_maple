@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2023 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+
+<!-- These resources are around just to allow their values to be customized
+     for different hardware and product builds.  Do not translate.
+
+     NOTE: The naming convention is "config_camelCaseValue". Some legacy
+     entries do not follow the convention, but all new entries should. -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Same as the AOSP list, but "wifi" comes before "mobile": the Wi-Fi icon is drawn on the
+         left of the cellular icon (the stock Xperia order is the other way around). -->
+    <string-array name="config_statusBarIcons" translatable="false">
+        <item>no_calling</item>
+        <item>call_strength</item>
+        <item>alarm_clock</item>
+        <item>rotate</item>
+        <item>headset</item>
+        <item>data_saver</item>
+        <item>ime</item>
+        <item>sync_failing</item>
+        <item>sync_active</item>
+        <item>nfc</item>
+        <item>tty</item>
+        <item>speakerphone</item>
+        <item>cdma_eri</item>
+        <item>data_connection</item>
+        <item>phone_evdo_signal</item>
+        <item>phone_signal</item>
+        <item>secure</item>
+        <item>managed_profile</item>
+        <item>connected_display</item>
+        <item>vpn</item>
+        <item>bluetooth</item>
+        <item>camera</item>
+        <item>microphone</item>
+        <item>location</item>
+        <item>mute</item>
+        <item>volume</item>
+        <item>zen</item>
+        <item>screen_record</item>
+        <item>cast</item>
+        <item>ethernet</item>
+        <item>satellite</item>
+        <item>network_traffic</item>
+        <item>hotspot</item>
+        <item>stacked_mobile</item>
+        <item>wifi</item>
+        <item>mobile</item>
+        <item>airplane</item>
+        <item>battery</item>
+        <item>sensors_off</item>
+    </string-array>
+</resources>

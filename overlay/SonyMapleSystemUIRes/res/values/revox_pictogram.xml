@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Sony stock icons offered in REvoX settings in addition to the default list -->
+    <string-array name="config_pictogramIconsExtra" translatable="false">
+        <item>ic_5g_plus_mobiledata_default</item>
+        <item>ic_5g_uc_mobiledata</item>
+        <item>ic_5g_uw_mobiledata</item>
+    </string-array>
+</resources>

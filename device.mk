@@ -27,6 +27,11 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
+# Xperia status bar icons (signal strength, data type, Wi-Fi) and their order
+PRODUCT_PACKAGES += \
+    SonyMapleSystemUIRes \
+    SonyMapleFrameworksRes
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
