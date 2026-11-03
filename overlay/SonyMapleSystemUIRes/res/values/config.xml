@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Show the data activity arrows by default; REvoX settings can turn them off -->
+    <bool name="config_showActivity">true</bool>
+</resources>
